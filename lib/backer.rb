@@ -8,7 +8,7 @@ class Backer
 
  def back_project(project)
    @backed_projects << project
-   # project.add_backer(self) # why can not use this one?
+   # project.add_backer(self) # User this causing a endless loop
    project.backers << self
  end
 
